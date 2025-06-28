@@ -1,0 +1,145 @@
+@font-face {
+    font-family: 'myFont';
+    src: url(/Profilev2/asset/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+:root{
+    --main-background-color: #000000d3;
+    --section-background-color: #5a5a5a;
+    --h4-color-text: #cbd813;
+    --global-text-color: #ffffff;
+    --a-background-color: #252525;
+    --a-hover-text-color: #cbd813;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'myFont';
+    color: var(--global-text-color);
+}
+
+
+body{
+    background-image: url(/Profilev2/asset/image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    width: clamp(11rem,90%, 110rem);
+    height: clamp(11rem, 90%, 50rem);
+    background-color: var(--main-background-color);
+    border: 0.5rem solid rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section{
+    height: clamp(11rem, 80%, 50rem);
+    width: clamp(1rem,50%,22rem);
+    padding: 1rem 2rem 1rem 2rem;
+    background-color: var(--section-background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+header img{
+    width: clamp(3rem, 7vw, 7rem);
+    border-radius: 5rem;
+    border: .2rem solid rgba(0, 0, 0, 0.308);
+}
+
+header p, i, h1, h4{
+    font-size: clamp(.75rem,.9vw,1rem);
+    white-space: nowrap;
+}
+
+header h1{
+    margin-bottom: .5rem;
+    font-size: clamp(1.5rem,1.8vw,2rem);
+    white-space: nowrap;
+}
+
+header h4{
+    margin-bottom: clamp(.5rem,2vw,2rem);
+    color: var(--h4-color-text);
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+nav a{
+    text-decoration: none;
+    background-color: var(--a-background-color);
+    height: clamp(2.5rem,5vh,3rem);
+    width: clamp(5rem, 100%, 20rem);
+    margin-bottom: clamp(.3rem,.5vw,2rem);
+    text-align: center;
+    border-radius: .5rem;
+    transition: .25s;
+    border: .1rem solid black;
+    font-size: clamp(.75rem, 1vw, 1rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+nav a:hover{
+    transform: scale(.95);
+    color: var(--a-hover-text-color);
+    box-shadow: 0 0 1rem var(--a-hover-text-color);
+}
+
+@media screen and (max-width:800px) {
+    nav a{
+        height: clamp(1.5rem,5vh,3rem);
+        
+}
+}
+
+@media screen and (max-width:500px) {
+    main{
+        width: 100vw;
+        height: 100vh;
+        border: none;
+
+}
+
+    section{
+        height: clamp(1rem, 90%, 35rem);
+        width: clamp(1rem,90%,22rem);
+        padding: 0;
+}
+
+    nav a{
+        width: clamp(5rem, 80%, 20rem);
+        
+}
+}
+
+
+
+
+
+
+
