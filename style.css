@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'myFont';
-    src: url(/Profilev2/asset/Inter-VariableFont_slnt\,wght.ttf);
+    src: url(/asset/Inter-VariableFont_slnt\,wght.ttf);
 }
 
 :root{
@@ -23,7 +23,7 @@
 
 
 body{
-    background-image: url(/Profilev2/asset/image.png);
+    background-image: url(/asset/image.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
